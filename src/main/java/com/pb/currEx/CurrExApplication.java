@@ -25,7 +25,10 @@ public class CurrExApplication {
 	@Bean
 	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
 		String currency = "usd";
+		String date = "2016-05-09";
 		String apiUrl = "http://api.nbp.pl/api/exchangerates/rates/a/" + currency;
+		String tableUrl = "http://api.nbp.pl/api/exchangerates/tables/a";
+		String apiUrlDate = "http://api.nbp.pl/api/exchangerates/rates/a/" + currency + "/" + date;
 		return args -> {
 			NbpExchangeRate reply = restTemplate.getForObject(apiUrl, NbpExchangeRate.class);
 			log.info(reply.toString());
