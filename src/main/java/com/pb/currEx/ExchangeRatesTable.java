@@ -8,19 +8,30 @@ public class ExchangeRatesTable {
     private String effectiveDate;
     private List<Rates> rates;
 
-    public void setTable(String table) {
+    private void setTable(String table) {
         this.table = table;
     }
 
-    public void setNo(String no) {
+    private void setNo(String no) {
         this.no = no;
     }
 
-    public void setEffectiveDate(String effectiveDate) {
+    private void setEffectiveDate(String effectiveDate) {
         this.effectiveDate = effectiveDate;
     }
 
-    public void setRates(List<Rates> rates) {
+    private void setRates(List<Rates> rates) {
         this.rates = rates;
+    }
+
+    public List<Rates> getRates() {
+        return rates;
+    }
+
+    @Override
+    public String toString() {
+        return "ExchangeRatesTable{" +
+                "rates=" + rates.toString() +
+                '}';
     }
 }

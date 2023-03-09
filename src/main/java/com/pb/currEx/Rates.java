@@ -5,15 +5,15 @@ public class Rates {
     private String code;
     private Double mid;
 
-    public void setCurrency(String currency) {
+    private void setCurrency(String currency) {
         this.currency = currency;
     }
 
-    public void setCode(String code) {
+    private void setCode(String code) {
         this.code = code;
     }
 
-    public void setMid(Double mid) {
+    private void setMid(Double mid) {
         this.mid = mid;
     }
 }

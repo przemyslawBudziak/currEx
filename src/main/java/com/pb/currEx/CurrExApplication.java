@@ -30,7 +30,7 @@ public class CurrExApplication {
 		String tableUrl = "http://api.nbp.pl/api/exchangerates/tables/a";
 		String apiUrlDate = "http://api.nbp.pl/api/exchangerates/rates/a/" + currency + "/" + date;
 		return args -> {
-			NbpExchangeRate reply = restTemplate.getForObject(apiUrl, NbpExchangeRate.class);
+			ExchangeRatesTable[] reply = restTemplate.getForObject(tableUrl, ExchangeRatesTable[].class);
 			log.info(reply.toString());
 		};
 	}
