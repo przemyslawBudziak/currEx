@@ -6,18 +6,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class ProjectController {
 
-    @RequestMapping("/calculator")
-    String calculator() {
-        return "calculator";
-    }
-
-    @RequestMapping("/historical")
-    String historical() {
-        return "historical";
-    }
-
-    @RequestMapping("/table")
-    String table() {
-        return "table";
-    }
+//    @RequestMapping("/calculator")
+//    String calculator() {
+//        return "calculator";
+//    }
+//
+//    @RequestMapping("/historical")
+//    String historical() {
+//        return "historical";
+//    }
+//
+//    @RequestMapping("/table")
+//    String table() {
+//        return "table";
+//    }
 }
